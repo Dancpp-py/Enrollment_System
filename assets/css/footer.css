@@ -1,0 +1,25 @@
+/* =========================================================
+   FOOTER STYLING
+   ========================================================= */
+
+.footer-section {
+    background: linear-gradient(180deg, #07132B 0%, #030A17 100%) !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer-icon a {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.footer-icon a:hover {
+    transform: translateY(-3px) scale(1.08);
+    box-shadow: 0 6px 16px rgba(245, 158, 11, 0.35);
+}
+
+@media (max-width: 768px) {
+    .footer-header, .footer-contact {
+        text-align: center;
+        align-items: center;
+    }
+}

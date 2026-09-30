@@ -1,0 +1,35 @@
+SET FOREIGN_KEY_CHECKS = 0;
+
+TRUNCATE TABLE admins;
+TRUNCATE TABLE admission_applications;
+TRUNCATE TABLE admission_requirements;
+TRUNCATE TABLE enrollment_documents;
+TRUNCATE TABLE enrollment_payments;
+TRUNCATE TABLE enrollments;
+TRUNCATE TABLE entrance_exam_results;
+TRUNCATE TABLE educational_background;
+TRUNCATE TABLE family_members;
+TRUNCATE TABLE grades;
+TRUNCATE TABLE grading_periods;
+TRUNCATE TABLE lms_classes;
+TRUNCATE TABLE lms_materials;
+TRUNCATE TABLE notifications;
+TRUNCATE TABLE password_resets;
+TRUNCATE TABLE professors;
+TRUNCATE TABLE quiz_answers;
+TRUNCATE TABLE quiz_attempts;
+TRUNCATE TABLE quiz_questions;
+TRUNCATE TABLE quizzes;
+TRUNCATE TABLE rooms;
+TRUNCATE TABLE school_years;
+TRUNCATE TABLE sections;
+TRUNCATE TABLE student_family_members;
+TRUNCATE TABLE students;
+TRUNCATE TABLE class_schedules;
+TRUNCATE TABLE subjects;
+TRUNCATE TABLE curriculum;
+TRUNCATE TABLE curriculum_versions;
+TRUNCATE TABLE strands;
+TRUNCATE TABLE users;
+
+SET FOREIGN_KEY_CHECKS = 1;

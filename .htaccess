@@ -1,0 +1,16 @@
+RewriteEngine On
+
+RewriteBase /enrollment_system/
+
+# Disable directory listing
+Options -Indexes
+
+# Don't rewrite existing files or directories
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Automatically add .php internally
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.+?)/?$ $1.php [L]
+

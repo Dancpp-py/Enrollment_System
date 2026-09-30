@@ -1,0 +1,236 @@
+@page {
+    size: A4 portrait;
+    margin: 0;
+}
+
+/* ---------- BODY ---------- */
+
+#registration-form.regform-body {
+    margin: 0;
+    background: #f1f5f9;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: #222;
+}
+
+/* ---------- PAPER ---------- */
+
+#registration-form .regform-wrapper {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    background: #fff;
+    border: 1px solid #d1d5db;
+    box-shadow: 0 8px 20px rgba(0,0,0,.12);
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+/* ---------- HEADER ---------- */
+
+#registration-form .regform-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 24px;
+    background-color: #0B1F4D;
+    color: white;
+}
+
+#registration-form .regform-brand {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#registration-form .regform-logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: white;
+    color: #0B1F4D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+#registration-form .regform-header h1 {
+    margin: 3px 0;
+    font-size: 20px;
+}
+
+#registration-form .regform-header h2 {
+    margin: 0;
+    font-size: 22px;
+}
+
+/* ---------- CONTENT ---------- */
+
+#registration-form .regform-content {
+    padding: 0;
+}
+
+.regField {
+    display: grid;
+    column-gap: 6px;
+    margin-top: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+
+/* ---------- TITLES ---------- */
+
+#registration-form .regform-content h2 {
+    margin: 22px 0 10px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #1D4ED8;
+    color: #0B1F4D;
+    font-size: 18px;
+}
+
+.reg-form-img {
+    width: 100px;
+    height: 100px;
+}
+
+/* ---------- FIELDS ---------- */
+
+#registration-form .regform-field {
+    margin-bottom: 12px;
+}
+
+#registration-form .regform-field label {
+    display: block;
+    margin-bottom: 4px;
+    font-weight: bold;
+    color: #0B1F4D;
+}
+
+#registration-form .regform-field input {
+    width: 100%;
+    padding: 7px 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    background: #f8fafc;
+    font-size: 13px;
+    box-sizing: border-box;
+}
+
+/* ---------- TABLE ---------- */
+
+#registration-form .regform-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    margin-top: 12px;
+}
+
+#registration-form .regform-table th {
+    background: #1E40AF;
+    color: white;
+    border: 1px solid #d1d5db;
+    padding: 8px;
+    font-size: 13px;
+}
+
+#registration-form .regform-table td {
+    border: 1px solid #d1d5db;
+    padding: 7px 8px;
+    font-size: 12px;
+    word-break: break-word;
+}
+
+#registration-form .regform-table tbody tr:nth-child(even) {
+    background: #f8fafc;
+}
+
+/* ---------- TOTAL ---------- */
+
+#registration-form .scf-total {
+    background: #dbeafe;
+    font-weight: bold;
+}
+
+/* ---------- AMOUNT ---------- */
+
+#registration-form .amount {
+    text-align: center;
+}
+
+/* ---------- NOTE ---------- */
+
+#registration-form .regform-note {
+    margin-top: 20px;
+    padding: 15px;
+    background: #eff6ff;
+    border-left: 4px solid #1D4ED8;
+    font-size: 12px;
+}
+
+#registration-form .regform-note ul {
+    margin: 8px 0 0 18px;
+    padding: 0;
+}
+
+#registration-form .regform-note li {
+    margin-bottom: 4px;
+}
+
+/* ---------- SIGNATURE ---------- */
+
+#registration-form .regform-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+#registration-form .regform-sign {
+    width: 200px;
+    text-align: center;
+    border-top: 1px solid #888;
+    padding-top: 6px;
+    font-size: 12px;
+}
+
+/* ---------- FOOTER ---------- */
+
+#registration-form .regform-bottom {
+    padding: 10px;
+    background: #f3f4f6;
+    text-align: center;
+    font-size: 11px;
+    color: #555;
+}
+
+/* ---------- PRINT ---------- */
+
+@media print {
+
+    #registration-form.regform-body {
+        margin: 0;
+        padding: 0;
+        background: white;
+    }
+
+    #registration-form .regform-wrapper {
+        width: 100%;
+        max-width: none;
+        border: none;
+        box-shadow: none;
+        margin: 0;
+    }
+
+    #registration-form .regform-content h2 {
+        page-break-after: avoid;
+    }
+
+    #registration-form .regform-table {
+        page-break-inside: auto;
+    }
+
+    #registration-form .regform-table tr {
+        page-break-inside: avoid;
+    }
+
+}

@@ -1,0 +1,71 @@
+/* =========================================================
+   NAVBAR STYLING - MODERN GLASSMORPHISM
+   ========================================================= */
+
+.navbar-container {
+    transition: all 0.3s ease;
+}
+
+.navbar {
+    background: rgba(10, 25, 49, 0.88) !important;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.navbar-logo {
+    width: 52px;
+    height: 52px;
+    filter: drop-shadow(0 2px 8px rgba(245, 158, 11, 0.3));
+    transition: transform 0.3s ease;
+}
+
+.navbar-logo:hover {
+    transform: scale(1.05) rotate(3deg);
+}
+
+.nav-link {
+    position: relative;
+    color: #F1F5F9;
+    font-weight: 500;
+    padding: 0.5rem 0.25rem;
+    transition: color 0.25s ease;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: var(--accent);
+    border-radius: 9999px;
+    transition: all 0.25s ease;
+    transform: translateX(-50%);
+}
+
+.nav-link:hover {
+    color: var(--accent);
+}
+
+.nav-link:hover::after {
+    width: 80%;
+}
+
+@media (max-width: 768px) {
+    .navbar-logo {
+        width: 44px;
+        height: 44px;
+    }
+
+    #mobile-menu {
+        background: rgba(6, 15, 30, 0.96);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border-top: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 0 0 1.25rem 1.25rem;
+    }
+}
